@@ -29,8 +29,10 @@ int main()
 	for(;;){
         //print a message and toggle the LED every 100ms
         println("Hi!");
-        LED_Write(BUTTON_Read()); //toggle the LED
+        LED_Write(1); //toggle the LED
         CyDelay(100);
+        LED_Write(0); //toggle the LED
+        CyDelay(900);
     }
 }
 
